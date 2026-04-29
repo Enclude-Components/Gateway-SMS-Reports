@@ -2,6 +2,13 @@
 
 A Salesforce package providing pre-built reports and a dashboard for monitoring SMS usage via the Gateway SMS (encsms) managed package.
 
+<a href="https://github.com/Enclude-Components/Gateway-SMS-Reports/releases/latest">
+  <img
+    alt="Install Latest Release"
+    src="https://img.shields.io/badge/Install%20Latest%20Release-238636?style=for-the-badge&logoColor=white&logo=DocuSign"
+  >
+</a>
+
 ## Metadata
 
 ### Reports — `SMSUsageReports`
