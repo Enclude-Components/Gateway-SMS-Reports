@@ -29,13 +29,6 @@
             <operator>equals</operator>
             <value>Delivered</value>
         </criteriaItems>
-        <criteriaItems>
-            <column>encsms__SMS_Message__c.encsms__Credits__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>greaterOrEqual</operator>
-            <value>1</value>
-        </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>

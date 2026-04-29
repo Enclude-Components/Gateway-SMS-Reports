@@ -12,11 +12,11 @@
     <description>All SMS messages with a status of Failed, Invalid, Expired, Out of Credits, Barred, or Unknown created within the current year.</description>
     <filter>
         <criteriaItems>
-            <column>encsms__SMS_Message__c.encsms__Status__c</column>
+            <column>encsms__SMS_Message__c.encsms__Failed__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Failed,Invalid,Expired,Unknown,Barred,OutOfCredits</value>
+            <value>1</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
