@@ -1,0 +1,11 @@
+minimum_cumulusci_version: '4.9.0'
+project:
+    name: Gateway-SMS-Reports
+    package:
+        name: Gateway-SMS-Reports
+        api_version: '66.0'
+    dependencies:
+        - github: 'https://github.com/EncludeLtd/Gateway-SMS-Package'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
