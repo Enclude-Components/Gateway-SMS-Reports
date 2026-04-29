@@ -9,29 +9,17 @@
     <columns>
         <field>encsms__SMS_Message__c.encsms__Status_Details__c</field>
     </columns>
-    <description>All SMS messages with a status of Failed, Invalid, Expired, Out of Credits, Barred, or Unknown created within the current year.</description>
-    <filter>
-        <criteriaItems>
-            <column>encsms__SMS_Message__c.encsms__Status__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Failed,Invalid,Expired,Unknown,Barred,OutOfCredits</value>
-        </criteriaItems>
-        <language>en_US</language>
-    </filter>
-    <format>Summary</format>
-    <groupingsDown>
-        <dateGranularity>Month</dateGranularity>
+    <columns>
         <field>CUST_CREATED_DATE</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
+    </columns>
+    <description>All SMS messages created within the current year.</description>
+    <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>encsms__SMS_Message__c.encsms__Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>SMS Failed this Year</name>
+    <name>SMS This Year</name>
     <params>
         <name>co</name>
         <value>1</value>

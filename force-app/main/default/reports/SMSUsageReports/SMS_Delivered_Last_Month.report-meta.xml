@@ -11,9 +11,9 @@
         <field>encsms__SMS_Message__c.encsms__Credits__c</field>
     </columns>
     <columns>
-        <field>encsms__SMS_Message__c.encsms__Merged_Text__c</field>
+        <field>CUST_CREATED_DATE</field>
     </columns>
-    <description>Delivered outbound messages where the estimated credits were 2 or more and the created date was within the current year.</description>
+    <description>Delivered outbound messages where the created date was last month.</description>
     <filter>
         <criteriaItems>
             <column>encsms__SMS_Message__c.encsms__Direction__c</column>
@@ -34,22 +34,17 @@
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>greaterOrEqual</operator>
-            <value>2</value>
+            <value>1</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>
-        <dateGranularity>Month</dateGranularity>
-        <field>CUST_CREATED_DATE</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>encsms__SMS_Message__c.encsms__Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>SMS Costing 2+ Credits this Year</name>
+    <name>SMS Delivered Last Month</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -61,6 +56,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_CURY</interval>
+        <interval>INTERVAL_LASTMONTH</interval>
     </timeFrameFilter>
 </Report>

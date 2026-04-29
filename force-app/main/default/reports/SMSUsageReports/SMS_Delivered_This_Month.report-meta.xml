@@ -10,36 +10,41 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>encsms__SMS_Message__c.encsms__Credits__c</field>
     </columns>
-    <description>Inbound messages where the created date is within the current year.</description>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <description>Delivered outbound messages where the created date was this month.</description>
     <filter>
         <criteriaItems>
             <column>encsms__SMS_Message__c.encsms__Direction__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Inbound</value>
+            <value>Outbound</value>
         </criteriaItems>
         <criteriaItems>
             <column>encsms__SMS_Message__c.encsms__Status__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>,Draft,Queued,Sent,Delivered,Clicked,Failed,Invalid,Expired,Unknown,Barred,OutOfCredits</value>
+            <value>Delivered</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>encsms__SMS_Message__c.encsms__Credits__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>
-        <dateGranularity>Month</dateGranularity>
-        <field>CUST_CREATED_DATE</field>
-        <sortOrder>Asc</sortOrder>
-    </groupingsDown>
-    <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>encsms__SMS_Message__c.encsms__Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>SMS Inbound This Year</name>
+    <name>SMS Delivered This Month</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -51,6 +56,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_CURY</interval>
+        <interval>INTERVAL_THISMONTH</interval>
     </timeFrameFilter>
 </Report>

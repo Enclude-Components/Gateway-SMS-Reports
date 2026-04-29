@@ -28,7 +28,7 @@
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#C82828</indicatorMiddleColor>
                 <metricLabel>(Estimated)</metricLabel>
-                <report>SMSUsageReports/SMS_Delivered_this_Year_fNf</report>
+                <report>SMSUsageReports/SMS_Delivered_This_Year</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -54,7 +54,7 @@
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#C82828</indicatorMiddleColor>
                 <metricLabel>(Estimated)</metricLabel>
-                <report>SMSUsageReports/SMS_Delivered_this_Month_zHv</report>
+                <report>SMSUsageReports/SMS_Delivered_This_Month</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -80,7 +80,7 @@
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#C82828</indicatorMiddleColor>
                 <metricLabel>(Estimated)</metricLabel>
-                <report>SMSUsageReports/SMS_Delivered_last_Month_Ssr</report>
+                <report>SMSUsageReports/SMS_Delivered_Last_Month</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
@@ -104,7 +104,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#C82828</indicatorMiddleColor>
-                <report>SMSUsageReports/SMS_Delivered_this_Year_fNf</report>
+                <report>SMSUsageReports/SMS_Delivered_This_Year</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>7</rowIndex>
@@ -128,7 +128,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C23934</indicatorLowColor>
                 <indicatorMiddleColor>#C82828</indicatorMiddleColor>
-                <report>SMSUsageReports/SMS_Delivered_this_Month_zHv</report>
+                <report>SMSUsageReports/SMS_Delivered_This_Month</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>7</rowIndex>
@@ -152,7 +152,7 @@
                 <indicatorHighColor>#00716B</indicatorHighColor>
                 <indicatorLowColor>#C82828</indicatorLowColor>
                 <indicatorMiddleColor>#C82828</indicatorMiddleColor>
-                <report>SMSUsageReports/SMS_Delivered_last_Month_Ssr</report>
+                <report>SMSUsageReports/SMS_Delivered_Last_Month</report>
                 <showRange>false</showRange>
             </dashboardComponent>
             <rowIndex>7</rowIndex>
@@ -184,7 +184,7 @@
                 </groupingSortProperties>
                 <header>SMS this Year</header>
                 <legendPosition>Right</legendPosition>
-                <report>SMSUsageReports/SMS_this_Year_PSi</report>
+                <report>SMSUsageReports/SMS_This_Year</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -218,7 +218,7 @@
                 <indicatorHighColor>#006E64</indicatorHighColor>
                 <indicatorLowColor>#006E6E</indicatorLowColor>
                 <indicatorMiddleColor>#006E64</indicatorMiddleColor>
-                <report>SMSUsageReports/SMS_Delivered_this_Year_fNf</report>
+                <report>SMSUsageReports/SMS_Delivered_This_Year</report>
                 <showPercentage>true</showPercentage>
                 <showRange>false</showRange>
                 <showTotal>false</showTotal>
@@ -255,7 +255,7 @@
                 <header>SMS Failed this Year</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>10</maxValuesDisplayed>
-                <report>SMSUsageReports/SMS_Failed_this_Year_WII</report>
+                <report>SMSUsageReports/SMS_Failed_This_Year</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -293,7 +293,7 @@
                 </groupingSortProperties>
                 <header>SMS Inbound this Year</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>SMSUsageReports/SMS_Inbound_this_Year</report>
+                <report>SMSUsageReports/SMS_Inbound_This_Year</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
@@ -331,7 +331,7 @@
                 <header>SMS Inbound this Year</header>
                 <legendPosition>Right</legendPosition>
                 <maxValuesDisplayed>10</maxValuesDisplayed>
-                <report>SMSUsageReports/SMS_Inbound_this_Year</report>
+                <report>SMSUsageReports/SMS_Inbound_This_Year</report>
                 <showPercentage>false</showPercentage>
                 <showTotal>true</showTotal>
                 <showValues>true</showValues>
@@ -369,7 +369,7 @@
                 </groupingSortProperties>
                 <header>SMS Costing 2+ Credits this Year</header>
                 <legendPosition>Bottom</legendPosition>
-                <report>SMSUsageReports/SMS_Costing_2_Credits_this_Year_aQW</report>
+                <report>SMSUsageReports/SMS_Multi_Segment_Messages_This_Year</report>
                 <showPercentage>false</showPercentage>
                 <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>

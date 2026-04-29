@@ -7,44 +7,31 @@
         <field>encsms__SMS_Message__c.encsms__Direction__c</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>encsms__SMS_Message__c.encsms__Credits__c</field>
+        <field>encsms__SMS_Message__c.encsms__Status_Details__c</field>
     </columns>
-    <columns>
-        <field>CUST_CREATED_DATE</field>
-    </columns>
-    <description>Delivered outbound messages where the created date was within the current year.</description>
+    <description>All SMS messages with a status of Failed, Invalid, Expired, Out of Credits, Barred, or Unknown created within the current year.</description>
     <filter>
-        <criteriaItems>
-            <column>encsms__SMS_Message__c.encsms__Direction__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>Outbound</value>
-        </criteriaItems>
         <criteriaItems>
             <column>encsms__SMS_Message__c.encsms__Status__c</column>
             <columnToColumn>false</columnToColumn>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>Delivered</value>
-        </criteriaItems>
-        <criteriaItems>
-            <column>encsms__SMS_Message__c.encsms__Credits__c</column>
-            <columnToColumn>false</columnToColumn>
-            <isUnlocked>true</isUnlocked>
-            <operator>greaterOrEqual</operator>
-            <value>1</value>
+            <value>Failed,Invalid,Expired,Unknown,Barred,OutOfCredits</value>
         </criteriaItems>
         <language>en_US</language>
     </filter>
     <format>Summary</format>
     <groupingsDown>
+        <dateGranularity>Month</dateGranularity>
+        <field>CUST_CREATED_DATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>encsms__SMS_Message__c.encsms__Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>SMS Delivered this Year</name>
+    <name>SMS Failed This Year</name>
     <params>
         <name>co</name>
         <value>1</value>

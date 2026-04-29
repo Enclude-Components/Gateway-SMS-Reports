@@ -13,7 +13,7 @@
     <columns>
         <field>CUST_CREATED_DATE</field>
     </columns>
-    <description>Delivered outbound messages where the created date was this month.</description>
+    <description>Delivered outbound messages where the created date was within the current year.</description>
     <filter>
         <criteriaItems>
             <column>encsms__SMS_Message__c.encsms__Direction__c</column>
@@ -44,7 +44,7 @@
         <field>encsms__SMS_Message__c.encsms__Status__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>SMS Delivered this Month</name>
+    <name>SMS Delivered This Year</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -56,6 +56,6 @@
     <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>CUST_CREATED_DATE</dateColumn>
-        <interval>INTERVAL_THISMONTH</interval>
+        <interval>INTERVAL_CURY</interval>
     </timeFrameFilter>
 </Report>
