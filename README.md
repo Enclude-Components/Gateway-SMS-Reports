@@ -38,7 +38,7 @@ A Salesforce package providing pre-built reports and a dashboard for monitoring 
 2. Run `cci flow run dev_org --org dev` to deploy this project.
 3. Run `cci org browser dev` to open the org in your browser.
 
-## Release
+### Release
 
 1. Release a Beta Version
 ```bash
